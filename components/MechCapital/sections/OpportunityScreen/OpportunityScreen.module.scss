@@ -1,0 +1,316 @@
+.opportunity {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(0deg, #000000 0%, #0a0a0a 100%);
+  border-top: 0.01vw solid rgba(255, 255, 255, 0.05);
+  padding: 5vw 0;
+}
+
+@media (max-width: 1024px) {
+  .opportunity {
+    padding: 8vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .opportunity {
+    padding: 10vw 0;
+  }
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.infoContentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoContent {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5vw 2vw;
+  background: linear-gradient(90deg, #171717 0%, #0a0a0a 100%);
+  box-shadow: 0px 1vw 2vw -0.6vw rgba(0, 0, 0, 0.25);
+  border: 0.1vw solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.3vw);
+  -webkit-backdrop-filter: blur(0.3vw);
+  border-radius: 1vw;
+  position: relative;
+
+  .neonCircle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+
+    &.bluePrint {
+      width: 12vw;
+      height: 12vw;
+      background: rgba(59, 130, 246, 0.1);
+      top: 0%;
+      right: 0%;
+      filter: blur(2vw);
+    }
+
+    &.pinkPrint {
+      width: 12vw;
+      height: 12vw;
+      background: rgba(147, 51, 234, 0.1);
+      bottom: 0%;
+      left: 0%;
+      filter: blur(2vw);
+    }
+  }
+
+  & .tagBlock {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.01vw solid rgba(255, 255, 255, 0.1);
+    padding: 0.35vw 0.65vw;
+    border-radius: 2vw;
+
+    & p {
+      font-size: 0.65vw;
+      color: var(--color-light-gray);
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--font-lineh-small);
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .infoContent {
+    width: 100%;
+    padding: 6vw 2vw;
+    background: linear-gradient(90deg, #171717 0%, #0a0a0a 100%);
+    box-shadow: 0px 1vw 2vw -0.6vw rgba(0, 0, 0, 0.25);
+    border: 0.1vw solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.3vw);
+    -webkit-backdrop-filter: blur(0.3vw);
+    border-radius: 1vw;
+
+    .neonCircle {
+      &.bluePrint {
+        width: 30vw;
+        height: 30vw;
+        filter: blur(5vw);
+      }
+
+      &.pinkPrint {
+        width: 30vw;
+        height: 30vw;
+        filter: blur(5vw);
+      }
+    }
+
+    & .tagBlock {
+      padding: 1vw 2vw;
+      border-radius: 3vw;
+
+      & p {
+        font-size: 1.65vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .infoContent {
+    padding: 10vw 4vw;
+    border-radius: 4vw;
+
+    .neonCircle {
+      &.bluePrint {
+        width: 45vw;
+        height: 45vw;
+        filter: blur(7vw);
+      }
+
+      &.pinkPrint {
+        width: 45vw;
+        height: 45vw;
+        filter: blur(7vw);
+      }
+    }
+
+    & .tagBlock {
+      padding: 1.8vw 3vw;
+      border-radius: 5vw;
+
+      & p {
+        font-size: 2.6vw;
+      }
+    }
+  }
+}
+
+.titleScreen {
+  text-align: center;
+  font-size: 2.4vw;
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-smallBold);
+  line-height: var(--font-lineh-small);
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .titleScreen {
+    font-size: 4vw;
+    margin-top: 3vw;
+    line-height: var(--font-lineh-small2);
+  }
+}
+
+@media (max-width: 576px) {
+  .titleScreen {
+    font-size: 6vw;
+    margin-top: 3vw;
+  }
+}
+
+.textDescription {
+  width: 90%;
+  text-align: center;
+  font-size: 1vw;
+  color: var(--color-light-gray-for-fly-block);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-lineh-normal-another);
+  margin-top: 3vw;
+}
+
+@media (max-width: 1024px) {
+  .textDescription {
+    width: 100%;
+    font-size: 2vw;
+    margin-top: 3vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .textDescription {
+    font-size: 3.6vw;
+    margin-top: 4vw;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2vw;
+  margin-top: 2.5vw;
+
+  & .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-radius: 0.5vw;
+    padding: 0.9vw 1.4vw;
+    background: var(--color-blue);
+    font-size: 0.85vw;
+    color: var(--color-white);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-normal);
+    cursor: pointer;
+    gap: 0.25vw;
+    box-shadow: 0 0.1vw 0.25vw 0.15vw rgba(59, 130, 246, 0.2);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgb(37 99 235);
+      transform: scale(1.04);
+    }
+
+    &.buttonTwo {
+      border: 0.1vw solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 0.1vw solid rgba(255, 255, 255, 0.2);
+        transform: scale(1);
+      }
+    }
+
+    & .buttonIcon {
+      width: 0.8vw;
+      height: 0.8vw;
+      fill: var(--color-white);
+    }
+
+    & .buttonIconTwo {
+      width: 1vw;
+      height: 1vw;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .buttons {
+    gap: 3vw;
+    margin-top: 4vw;
+
+    & .button {
+      border-radius: 1vw;
+      padding: 1.5vw 3vw;
+      font-size: 1.8vw;
+      cursor: pointer;
+      gap: 1vw;
+
+      & .buttonIcon {
+        width: 2vw;
+        height: 2vw;
+      }
+
+      & .buttonIconTwo {
+        width: 2.2vw;
+        height: 2.2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 8vw;
+
+    & .button {
+      border-radius: 2vw;
+      padding: 4vw 5vw;
+      font-size: 3.6vw;
+      gap: 2vw;
+
+      & .buttonIcon {
+        width: 3vw;
+        height: 3vw;
+      }
+
+      & .buttonIconTwo {
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+  }
+}

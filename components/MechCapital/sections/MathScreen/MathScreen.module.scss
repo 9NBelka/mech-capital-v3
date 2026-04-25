@@ -1,0 +1,540 @@
+.mathBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(23, 23, 23, 1);
+  padding: 5vw 0;
+}
+
+@media (max-width: 1024px) {
+  .mathBlock {
+    padding: 8vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .mathBlock {
+    padding: 10vw 0;
+  }
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .tagBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4vw;
+
+    & p {
+      font-size: 0.7vw;
+      color: var(--color-orange-for-icon);
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-smallStrong);
+      line-height: var(--font-lineh-small);
+      letter-spacing: 0.1vw;
+      text-transform: uppercase;
+    }
+
+    & .tagBlockIcon {
+      width: 1vw;
+      height: 1vw;
+      color: var(--color-orange-for-icon);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .textContent {
+    & .tagBlock {
+      gap: 1vw;
+
+      & p {
+        font-size: 1.7vw;
+        letter-spacing: 0.15vw;
+      }
+
+      & .tagBlockIcon {
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .textContent {
+    & .tagBlock {
+      gap: 1.5vw;
+
+      & p {
+        font-size: 3vw;
+        letter-spacing: 0.15vw;
+      }
+
+      & .tagBlockIcon {
+        width: 3.5vw;
+        height: 3.5vw;
+      }
+    }
+  }
+}
+
+.titleScreen {
+  text-align: center;
+  font-size: 2.4vw;
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-small);
+  width: 47%;
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .titleScreen {
+    font-size: 4vw;
+    width: 90%;
+    margin-top: 3vw;
+    line-height: var(--font-lineh-small2);
+  }
+}
+
+@media (max-width: 576px) {
+  .titleScreen {
+    font-size: 6vw;
+    margin-top: 3vw;
+    width: 100%;
+  }
+}
+
+.textDescription {
+  width: 50%;
+  text-align: center;
+  font-size: 1vw;
+  color: var(--color-gray);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-lineh-normal-another);
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .textDescription {
+    width: 80%;
+    font-size: 1.8vw;
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .textDescription {
+    width: 100%;
+    font-size: 3.6vw;
+    margin-top: 4vw;
+  }
+}
+
+.blockGraphAndIconsBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vw;
+  gap: 2.5vw;
+  width: 100%;
+
+  & .blockGraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 1.75vw 1.75vw;
+    border-radius: 0.8vw;
+    background: rgba(10, 10, 10, 0.5);
+    border: 0.01vw solid rgba(255, 255, 255, 0.05);
+
+    & .blockGraphTitle {
+      font-size: 0.9vw;
+      color: var(--color-white);
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--font-lineh-small);
+    }
+
+    & .graph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-top: 3vw;
+
+      & .graphBlockText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 39%;
+
+        & .graphNumbText {
+          font-size: 1.7vw;
+          color: var(--color-white);
+          font-family: var(--font-Inter);
+          font-weight: var(--font-weight-bold);
+          line-height: var(--font-lineh-small);
+        }
+
+        & .graphText {
+          font-size: 0.75vw;
+          color: var(--color-gray);
+          font-family: var(--font-Inter);
+          font-weight: var(--font-weight-regular);
+          line-height: var(--font-lineh-normal-another);
+        }
+      }
+
+      & .graphRed {
+        width: 12.8vw;
+
+        & img {
+          width: 100%;
+        }
+      }
+
+      & .graphBlue {
+        width: 12.8vw;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    & .graphNameBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 1vw;
+      margin-top: 2.5vw;
+
+      & .dotWithTextBlock {
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+
+        & .dot {
+          display: flex;
+          width: 0.7vw;
+          height: 0.7vw;
+
+          background-color: var(--color-red-for-icon);
+          border-radius: 50%;
+
+          &.dotBlue {
+            background-color: var(--color-blue);
+          }
+        }
+
+        & p {
+          font-size: 0.7vw;
+          color: var(--color-white);
+          font-family: var(--font-Inter);
+          font-weight: var(--font-weight-regular);
+          line-height: var(--font-lineh-small);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .blockGraphAndIconsBlocks {
+    flex-wrap: wrap;
+    margin-top: 5vw;
+    gap: 5vw;
+
+    & .blockGraph {
+      width: 100%;
+      padding: 4vw 2vw;
+      border-radius: 2vw;
+
+      & .blockGraphTitle {
+        font-size: 2vw;
+      }
+
+      & .graph {
+        margin-top: 4vw;
+
+        & .graphBlockText {
+          top: 40%;
+
+          & .graphNumbText {
+            font-size: 3vw;
+          }
+
+          & .graphText {
+            font-size: 2vw;
+          }
+        }
+
+        & .graphRed {
+          width: 27vw;
+        }
+
+        & .graphBlue {
+          width: 27vw;
+        }
+      }
+
+      & .graphNameBlock {
+        gap: 3vw;
+        margin-top: 2.5vw;
+
+        & .dotWithTextBlock {
+          gap: 1vw;
+
+          & .dot {
+            width: 1.2vw;
+            height: 1.2vw;
+          }
+
+          & p {
+            font-size: 1.8vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .blockGraphAndIconsBlocks {
+    flex-wrap: wrap;
+    margin-top: 6vw;
+    gap: 8vw;
+
+    & .blockGraph {
+      width: 100%;
+      padding: 6vw 2vw;
+      border-radius: 4vw;
+
+      & .blockGraphTitle {
+        font-size: 4vw;
+      }
+
+      & .graph {
+        margin-top: 6vw;
+
+        & .graphBlockText {
+          & .graphNumbText {
+            font-size: 6vw;
+          }
+
+          & .graphText {
+            font-size: 3.6vw;
+          }
+        }
+
+        & .graphRed {
+          width: 50vw;
+        }
+
+        & .graphBlue {
+          width: 50vw;
+        }
+      }
+
+      & .graphNameBlock {
+        gap: 4vw;
+        margin-top: 5vw;
+
+        & .dotWithTextBlock {
+          gap: 2vw;
+
+          & .dot {
+            width: 3vw;
+            height: 3vw;
+          }
+
+          & p {
+            font-size: 3.4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.iconsBlocks {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .iconsBlocks {
+    width: 100%;
+  }
+}
+
+.iconsBlocks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+
+  & .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1vw;
+
+    & .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3vw;
+      height: 3vw;
+      border-radius: 0.25vw;
+      background-color: rgba(239, 68, 68, 0.1);
+      transition: all 0.3s ease;
+
+      &.iconContainerPurple {
+        background-color: rgba(249, 115, 22, 0.1);
+      }
+
+      &.iconContainerOrange {
+        background-color: rgba(55, 65, 81, 0.3);
+      }
+
+      & .cardIcon {
+        display: flex;
+        width: 1.5vw;
+        height: 1.5vw;
+        color: var(--color-red-for-icon);
+        transition: all 0.3s ease;
+
+        &.colorPurple {
+          color: var(--color-orange-for-icon-two);
+        }
+
+        &.colorOrange {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    & .cardTitleAndDescription {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+
+      & .cardTitle {
+        font-size: 0.95vw;
+        color: var(--color-white);
+        font-family: var(--font-Inter);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--font-lineh-small);
+        margin-top: 0.2vw;
+      }
+
+      & .cardDescription {
+        font-size: 0.75vw;
+        color: var(--color-gray);
+        font-family: var(--font-Inter);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--font-lineh-normal-another);
+        margin-top: 0.4vw;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .iconsBlocks {
+    width: 100%;
+    gap: 5vw;
+
+    & .card {
+      gap: 2vw;
+
+      & .iconContainer {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 1vw;
+
+        & .cardIcon {
+          width: 4vw;
+          height: 4vw;
+        }
+      }
+
+      & .cardTitleAndDescription {
+        width: 100%;
+
+        & .cardTitle {
+          font-size: 2.3vw;
+          margin-top: 0.5vw;
+        }
+
+        & .cardDescription {
+          font-size: 1.8vw;
+          margin-top: 1vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .iconsBlocks {
+    gap: 8vw;
+
+    & .card {
+      gap: 4vw;
+
+      & .iconContainer {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 3vw;
+
+        & .cardIcon {
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+
+      & .cardTitleAndDescription {
+        width: 82%;
+        & .cardTitle {
+          font-size: 4.6vw;
+          margin-top: 0.5vw;
+        }
+
+        & .cardDescription {
+          font-size: 3.6vw;
+          margin-top: 1vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

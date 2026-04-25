@@ -1,0 +1,195 @@
+{
+  "hero": {
+    "badge": "Pre-seed Round Open",
+    "headline": "Two growth engines:",
+    "headlineEnd": "paid and organic.",
+    "description1": "We invested $1,200 in test advertising. Result: 47 quality leads (~$25/lead) and 23+ came organically through word of mouth.",
+    "description2": "Both engines work. The market is ready for us.",
+    "buttonPitchDeck": "⚡️ Request access to Pitch Deck",
+    "buttonResults": "View results",
+    "note": "70 leads (47 Paid + 23 Organic) • Global Demand",
+    "paidSystem": "Paid system",
+    "verified": "Verified",
+    "paidLeads": "47 leads",
+    "cpl": "CPL ~$25",
+    "organicLeads": "Organic leads",
+    "organicCost": "$0 Cost"
+  },
+  "nav": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "results": "Results",
+    "invest": "Invest"
+  },
+  "problem": {
+    "tag": "Unfair Advantage",
+    "title": "Why do we see what others cannot?",
+    "subTitle": "We built the product for ourselves.",
+    "description": "We are not just a SaaS startup. We are a team that combines deep technology expertise with hands-on experience managing our own auto service network. MECHorbit was born from our daily pain. We know what works and what doesn't — because we tested it on our own business.",
+    "cards": [
+      {
+        "title": "First-hand experience",
+        "description": "We are our own customers. We felt the pain of running a \"paper-based\" business ourselves and created the cure for it.",
+        "iconType": "wrench"
+      },
+      {
+        "title": "Deep expertise",
+        "description": "We understand the inner workings of an auto service down to the smallest details, inaccessible to outside software developers.",
+        "iconType": "brain"
+      },
+      {
+        "title": "Battle-tested",
+        "description": "Every feature of MECHorbit went through real-world testing in our own network before reaching customers.",
+        "iconType": "trend"
+      }
+    ]
+  },
+  "math": {
+    "tag": "Problem",
+    "title": "50% of auto services still run on notebooks and Excel",
+    "description": "This is not an assumption. This is data from our first 70+ organic leads. The market is technologically stuck in the last century.",
+    "graphTitle": "Market Technology Gap",
+    "graphPercent": "50%",
+    "graphLabel": "Excel / Paper",
+    "legendOld": "Outdated methods",
+    "legendOther": "Others",
+    "cards": [
+      {
+        "title": "Total chaos",
+        "description": "The lack of systematic accounting turns the business into chaos, where it is impossible to plan workload and control resources.",
+        "iconType": "doc"
+      },
+      {
+        "title": "Loss of up to 30% of profit",
+        "description": "Process inefficiencies, lost customers and \"missing\" spare parts cost services a third of their potential revenue.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Absolute distrust",
+        "description": "The end consumer — the car owner — does not trust a \"garage\" approach without a transparent history and digital reports.",
+        "iconType": "warning"
+      }
+    ]
+  },
+  "info": {
+    "title": "We start with the customer,",
+    "titleSpan": "to \"connect\" the entire auto service market for free.",
+    "description": "Our B2C2B strategy launches a self-reinforcing cycle that allows us to capture the market with minimal costs, using the car owner as a \"Trojan horse\".",
+    "cards": [
+      {
+        "title": "Car owner acquisition",
+        "description": "Car owners download a free app — a \"digital service book\". We deliver value to drivers.",
+        "iconType": "phone"
+      },
+      {
+        "title": "Connection",
+        "description": "We connect them to the service, transferring the full car history and a ready checklist of required work.",
+        "iconType": "link"
+      },
+      {
+        "title": "Auto service \"capture\"",
+        "description": "We give them free access to our CRM to process the \"hot\" client, integrating them into the ecosystem.",
+        "iconType": "database"
+      },
+      {
+        "title": "Monetization",
+        "description": "We offer auto services premium plans with indispensable tools they will not be able to give up.",
+        "iconType": "lightning"
+      }
+    ]
+  },
+  "price": {
+    "tag": "Our main asset",
+    "title": "Proven result:",
+    "titleSpan": "our dual growth engine works.",
+    "conclusionSpan": "Key takeaway:",
+    "conclusionText": "10% of all leads came from Europe, proving global demand and the x3 pricing potential.",
+    "cards": [
+      {
+        "title": "Paid engine",
+        "subTitle": "Paid Acquisition",
+        "image": "/images/dollarForCardPrice.png",
+        "classForHover": "classForHoverBlue",
+        "iconType": "target",
+        "list": [
+          {
+            "text": "Invested in test",
+            "value": "$1,200"
+          },
+          {
+            "text": "Quality leads",
+            "value": "47"
+          },
+          {
+            "text": "Cost per lead (CPL)",
+            "value": "~$25",
+            "valueClass": "highlightValue"
+          }
+        ],
+        "button": {
+          "text": "Predictable scaling"
+        }
+      },
+      {
+        "title": "Organic engine",
+        "subTitle": "Organic Growth",
+        "image": "/images/fireForCardPrice.png",
+        "classForHover": "classForHoverPurple",
+        "iconType": "people",
+        "list": [
+          {
+            "text": "Organic leads",
+            "value": "23+"
+          },
+          {
+            "text": "Ad spend",
+            "value": "0$",
+            "valueClass": "highlightValue"
+          },
+          {
+            "text": "Effect",
+            "value": "Product spreads itself",
+            "valueClass": "highlightText"
+          }
+        ],
+        "button": {
+          "text": "Strong Product-Market Fit",
+          "classForColor": "anotherColorButton"
+        }
+      }
+    ]
+  },
+  "data": {
+    "tag": "The Big Vision",
+    "title": "Our real product is",
+    "titleSpan": "data.",
+    "description": "MECH is not just a SaaS. It is the future Data Engine for the entire Aftermarket. Aggregated data from millions of \"digital cars\" will become the company's most valuable asset.",
+    "cards": [
+      {
+        "title": "First-hand experience",
+        "description": "We are our own customers. We felt the pain of a \"paper-based\" business ourselves and created the cure for it.",
+        "iconType": "database"
+      },
+      {
+        "title": "Deep expertise",
+        "description": "We understand the inner workings of an auto service down to the smallest details, inaccessible to outside software developers.",
+        "iconType": "graph"
+      },
+      {
+        "title": "Battle-tested",
+        "description": "Every feature of MECHorbit went through real-world testing in our own network before reaching customers.",
+        "iconType": "diagram"
+      }
+    ]
+  },
+  "opportunity": {
+    "tag": "Opportunity",
+    "title": "We are raising a pre-seed/seed round to prepare for global expansion",
+    "description": "We are looking for strategic partners who will help us \"fuel\" our proven growth engines and scale success worldwide.",
+    "buttonPitchDeck": "⚡️ Request access to Pitch Deck",
+    "buttonContact": "✉️ Contact the founder"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

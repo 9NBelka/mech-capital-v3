@@ -1,0 +1,101 @@
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 1);
+  border-top: 0.01vw solid rgba(255, 255, 255, 0.05);
+  padding: 2vw 0;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 4vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 6vw 0;
+  }
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.infoContentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleScreen {
+  text-align: center;
+  font-size: 1.15vw;
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-smallBold);
+  line-height: var(--font-lineh-small);
+}
+
+@media (max-width: 1024px) {
+  .titleScreen {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleScreen {
+    font-size: 4vw;
+  }
+}
+
+.textDescription {
+  text-align: center;
+  font-size: 0.7vw;
+  color: var(--color-gray-for-note-Hero);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-lineh-normal-another);
+  margin-top: 0.9vw;
+
+  &.textDescriptionBottom {
+    margin-top: 0.25vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .textDescription {
+    font-size: 1.7vw;
+    margin-top: 1.6vw;
+
+    &.textDescriptionBottom {
+      margin-top: 0.25vw;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .textDescription {
+    font-size: 2.6vw;
+    margin-top: 3vw;
+
+    &.textDescriptionBottom {
+      margin-top: 1vw;
+    }
+  }
+}

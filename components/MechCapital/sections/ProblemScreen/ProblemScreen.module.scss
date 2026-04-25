@@ -1,0 +1,419 @@
+.problem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, #171717 0%, #0a0a0a 100%);
+  border-top: 0.01vw solid rgba(255, 255, 255, 0.05);
+  padding: 5vw 0;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .problem {
+    padding: 8vw 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .problem {
+    padding: 10vw 0;
+  }
+}
+
+.neonCircle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+
+  &.bluePrint {
+    width: 22vw;
+    height: 22vw;
+    background: rgba(59, 130, 246, 0.05);
+    top: 0%;
+    right: 0%;
+    filter: blur(4vw);
+  }
+}
+
+@media (max-width: 1024px) {
+  .neonCircle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+
+    &.bluePrint {
+      width: 60vw;
+      height: 60vw;
+      background: rgba(59, 130, 246, 0.05);
+      top: 0%;
+      right: 0%;
+      filter: blur(15vw);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .neonCircle {
+    &.bluePrint {
+      width: 80vw;
+      height: 80vw;
+      background: rgba(59, 130, 246, 0.05);
+      top: 0%;
+      right: 10%;
+      filter: blur(13vw);
+    }
+  }
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .tagBlock {
+    display: flex;
+    background: rgba(168, 85, 247, 0.1);
+    border: 0.01vw solid rgba(168, 85, 247, 0.3);
+    padding: 0.35vw 0.65vw;
+    border-radius: 2vw;
+
+    & p {
+      font-size: 0.65vw;
+      color: var(--color-pink);
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--font-lineh-small);
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .textContent {
+    & .tagBlock {
+      padding: 1vw 2vw;
+      border-radius: 3vw;
+
+      & p {
+        font-size: 1.55vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .textContent {
+    & .tagBlock {
+      padding: 1.8vw 3vw;
+      border-radius: 5vw;
+
+      & p {
+        font-size: 2.6vw;
+      }
+    }
+  }
+}
+
+.titleScreen {
+  font-size: 2.4vw;
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-small);
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .titleScreen {
+    font-size: 4vw;
+    margin-top: 3vw;
+    line-height: var(--font-lineh-small2);
+  }
+}
+
+@media (max-width: 576px) {
+  .titleScreen {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 3vw;
+  }
+}
+
+.titleForDescription {
+  font-size: 1.2vw;
+  color: var(--color-white);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-small);
+  margin-top: 2.5vw;
+}
+
+@media (max-width: 1024px) {
+  .titleForDescription {
+    font-size: 2.4vw;
+    margin-top: 6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleForDescription {
+    font-size: 4vw;
+    margin-top: 6vw;
+  }
+}
+
+.textDescription {
+  width: 60%;
+  text-align: center;
+  font-size: 1vw;
+  color: var(--color-gray);
+  font-family: var(--font-Inter);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-lineh-normal-another);
+  margin-top: 1.5vw;
+}
+
+@media (max-width: 1024px) {
+  .textDescription {
+    width: 100%;
+    font-size: 1.8vw;
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .textDescription {
+    font-size: 3.6vw;
+    margin-top: 4vw;
+  }
+}
+
+.blocksWithExperience {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vw;
+  gap: 1.5vw;
+
+  & .card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background: rgba(10, 10, 10, 0.5);
+    border: 0.01vw solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.75vw;
+    padding: 1.5vw 1.5vw;
+    transition: all 0.2s ease;
+
+    &:hover {
+      &.classForHoverBlue {
+        transform: translateY(-0.5vw);
+        border: 0.01vw solid rgb(59 130 246 / 0.5);
+        box-shadow: 0px 0.2vw 0.4vw 0vw rgb(59 130 246 / 0.2);
+      }
+      &.classForHoverPurple {
+        transform: translateY(-0.5vw);
+        border: 0.01vw solid rgba(168, 85, 247, 0.5);
+        box-shadow: 0px 0.2vw 0.4vw 0vw rgba(168, 85, 247, 0.2);
+      }
+      &.classForHoverOrange {
+        transform: translateY(-0.5vw);
+        border: 0.01vw solid rgba(245, 158, 11, 0.5);
+        box-shadow: 0px 0.2vw 0.4vw 0vw rgba(245, 158, 11, 0.2);
+      }
+    }
+
+    & .iconAndTextBlock {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1vw;
+
+      & .cardTitleMain {
+        font-size: 1vw;
+        color: var(--color-white);
+        font-family: var(--font-Inter);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--font-lineh-small);
+      }
+    }
+
+    & .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3vw;
+      height: 3vw;
+      border-radius: 0.8vw;
+      background-color: rgba(59, 130, 246, 0.1);
+      transition: all 0.3s ease;
+
+      &.iconContainerPurple {
+        background-color: rgba(168, 85, 247, 0.1);
+      }
+
+      &.iconContainerOrange {
+        background-color: rgba(245, 158, 11, 0.1);
+      }
+
+      & .cardIcon {
+        width: 1.2vw;
+        height: 1.2vw;
+        color: var(--color-blue-for-icon);
+        transition: all 0.3s ease;
+
+        &.colorPurple {
+          color: var(--color-purple-for-icon);
+        }
+
+        &.colorOrange {
+          color: var(--color-orange-for-icon);
+        }
+      }
+    }
+
+    & .cardTitleAndDescription {
+      & .cardTitle {
+        font-size: 1vw;
+        color: var(--color-white);
+        font-family: var(--font-Inter);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--font-lineh-small);
+        margin-top: 1vw;
+        display: none;
+      }
+
+      & .cardDescription {
+        font-size: 0.75vw;
+        color: var(--color-gray);
+        font-family: var(--font-Inter);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--font-lineh-normal-another);
+        margin-top: 1vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .blocksWithExperience {
+    flex-wrap: wrap;
+    margin-top: 4vw;
+    gap: 3vw;
+
+    & .card {
+      flex-direction: row;
+      gap: 2.5vw;
+      width: 100%;
+      border-radius: 2vw;
+      padding: 3vw 3vw;
+
+      &:hover {
+        &.classForHoverBlue {
+          transform: translateY(0vw);
+          border: 0.01vw solid rgba(255, 255, 255, 0.05);
+          box-shadow: 0px 0vw 0vw 0vw rgb(59 130 246 / 0.2);
+        }
+        &.classForHoverPurple {
+          transform: translateY(0vw);
+          border: 0.01vw solid rgba(255, 255, 255, 0.05);
+          box-shadow: 0px 0vw 0vw 0vw rgb(59 130 246 / 0.2);
+        }
+        &.classForHoverOrange {
+          transform: translateY(0vw);
+          border: 0.01vw solid rgba(255, 255, 255, 0.05);
+          box-shadow: 0px 0vw 0vw 0vw rgb(59 130 246 / 0.2);
+        }
+      }
+
+      & .iconAndTextBlock {
+        align-items: start;
+        & .cardTitleMain {
+          display: none;
+        }
+      }
+
+      & .iconContainer {
+        width: 6vw;
+        height: 6vw;
+        border-radius: 1.5vw;
+
+        & .cardIcon {
+          width: 3vw;
+          height: 3vw;
+        }
+      }
+
+      & .cardTitleAndDescription {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        & .cardTitle {
+          display: flex;
+          font-size: 2.4vw;
+          margin-top: 0.3vw;
+          // margin-top: 2.5vw;
+        }
+
+        & .cardDescription {
+          font-size: 1.8vw;
+          margin-top: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .blocksWithExperience {
+    margin-top: 5vw;
+    gap: 5vw;
+
+    & .card {
+      gap: 5vw;
+      width: 100%;
+      border-radius: 4vw;
+      padding: 5vw 5vw;
+
+      & .iconContainer {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 3vw;
+
+        & .cardIcon {
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+
+      & .cardTitleAndDescription {
+        width: 82%;
+
+        & .cardTitle {
+          font-size: 4.6vw;
+          margin-top: 0.5vw;
+          // margin-top: 4vw;
+        }
+
+        & .cardDescription {
+          font-size: 3.6vw;
+          // margin-top: 3vw;
+          margin-top: 1.5vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://mech.capital/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mech.capital/ua" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mech.capital/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mech.capital/ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mech.capital/" />
+  </url>
+
+  <url>
+    <loc>https://mech.capital/ua</loc>
+    <lastmod>2026-03-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mech.capital/ua" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mech.capital/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mech.capital/ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mech.capital/" />
+  </url>
+
+  <url>
+    <loc>https://mech.capital/en</loc>
+    <lastmod>2026-03-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mech.capital/ua" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mech.capital/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mech.capital/ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mech.capital/" />
+  </url>
+
+  <url>
+    <loc>https://mech.capital/ru</loc>
+    <lastmod>2026-03-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mech.capital/ua" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mech.capital/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mech.capital/ru" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mech.capital/" />
+  </url>
+</urlset>
